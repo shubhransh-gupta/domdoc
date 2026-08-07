@@ -5,11 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DOMDoc: Page Audit — One-Click Lighthouse for Developers</title>
   <meta name="description" content="DOMDoc is a free Chrome extension for one-click webpage audits. Test any site for Performance, Accessibility, SEO, and UX.">
-  <meta name="theme-color" content="#0d0d10">
+  <meta name="theme-color" content="#0b0c10">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🩺</text></svg>">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="mirror-bg" aria-hidden="true">
+    <div class="mirror-bg__sheen"></div>
+    <div class="mirror-bg__orb mirror-bg__orb--1"></div>
+    <div class="mirror-bg__orb mirror-bg__orb--2"></div>
+    <div class="mirror-bg__orb mirror-bg__orb--3"></div>
+  </div>
+
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
@@ -27,6 +34,7 @@
 
   <main id="main">
     <section class="hero">
+      <div class="glass-panel hero__panel">
       <div class="hero__badge">Free · Open source · Local-first</div>
       <h1>DOMDoc</h1>
       <p class="hero__tagline">Page Audit — one-click Lighthouse for developers.</p>
@@ -37,6 +45,7 @@
         <a href="#install" class="btn btn--secondary">Installation guide</a>
       </div>
       <p class="hero__note">Works in Chrome, Brave, Edge · No account · No npm required</p>
+      </div>
     </section>
 
     <section id="about" class="section about">
