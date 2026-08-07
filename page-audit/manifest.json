@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
   "name": "Page Audit — One-Click Lighthouse",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Instantly audit any webpage for Performance, Accessibility, SEO, and UX issues.",
+  "homepage_url": "https://shubhransh-gupta.github.io/page-audit/",
   "permissions": ["activeTab", "scripting"],
   "action": {
     "default_popup": "popup/popup.html",

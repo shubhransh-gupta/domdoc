@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Audit — One-Click Lighthouse Arcade</title>
+  <meta name="description" content="Audit any webpage like a boss. Performance, Accessibility, SEO & UX scores in one click. Free Chrome extension." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧨</text></svg>" />
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="stars" aria-hidden="true"></div>
+
+  <header class="arcade-header">
+    <div class="coin-counter">
+      <span class="coin" aria-hidden="true"></span>
+      <span id="coin-count">000000</span>
+    </div>
+    <div class="world-label">WORLD WEB-1</div>
+    <div class="lives">
+      <span>LIVES</span>
+      <span class="life-icons">🧨🧨🧨</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Arcade Cabinet Hero -->
+    <section class="cabinet" id="hero">
+      <div class="cabinet-top">
+        <div class="marquee">
+          <div class="marquee-inner">
+            <span>★ PAGE AUDIT ★ ONE-CLICK LIGHTHOUSE ★ TEST ANY WEBSITE ★ INSERT COIN ★</span>
+            <span>★ PAGE AUDIT ★ ONE-CLICK LIGHTHOUSE ★ TEST ANY WEBSITE ★ INSERT COIN ★</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cabinet-screen">
+        <div class="screen-bezel">
+          <div class="cloud cloud-1" aria-hidden="true"></div>
+          <div class="cloud cloud-2" aria-hidden="true"></div>
+          <div class="cloud cloud-3" aria-hidden="true"></div>
+
+          <div class="hero-content">
+            <div class="hero-badge blink">PRESS START</div>
+            <h1>
+              <span class="title-line">PAGE</span>
+              <span class="title-line accent">AUDIT</span>
+            </h1>
+            <p class="hero-tagline">One-Click Lighthouse for Normal Developers</p>
+
+            <div class="score-preview">
+              <div class="score-card">
+                <span class="score-label">PERF</span>
+                <div class="score-bar"><div class="score-fill perf" style="width:82%"></div></div>
+                <span class="score-num">82</span>
+              </div>
+              <div class="score-card">
+                <span class="score-label">A11Y</span>
+                <div class="score-bar"><div class="score-fill a11y" style="width:61%"></div></div>
+                <span class="score-num">61</span>
+              </div>
+              <div class="score-card">
+                <span class="score-label">SEO</span>
+                <div class="score-bar"><div class="score-fill seo" style="width:91%"></div></div>
+                <span class="score-num">91</span>
+              </div>
+              <div class="score-card">
+                <span class="score-label">UX</span>
+                <div class="score-bar"><div class="score-fill ux" style="width:73%"></div></div>
+                <span class="score-num">73</span>
+              </div>
+            </div>
+
+            <div class="hero-buttons">
+              <a href="#" class="btn btn-primary" id="store-btn">
+                <span class="btn-shine"></span>
+                GET ON CHROME STORE
+              </a>
+              <a href="https://github.com/shubhransh-gupta/page-audit" class="btn btn-secondary" target="_blank" rel="noopener">
+                VIEW ON GITHUB
+              </a>
+            </div>
+
+            <p class="hero-note blink-slow">▶ NO NPM · NO BUILD · FREE FOREVER</p>
+          </div>
+
+          <div class="ground" aria-hidden="true">
+            <div class="brick-row"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cabinet-controls" aria-hidden="true">
+        <div class="joystick">
+          <div class="stick"></div>
+          <div class="base"></div>
+        </div>
+        <div class="buttons">
+          <div class="arcade-btn btn-a">A</div>
+          <div class="arcade-btn btn-b">B</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Power-ups / Features -->
+    <section class="level" id="features">
+      <div class="level-header">
+        <span class="flag">🚩</span>
+        <h2>POWER-UPS</h2>
+        <span class="level-num">1-1</span>
+      </div>
+
+      <div class="block-grid">
+        <article class="question-block">
+          <div class="block-top">?</div>
+          <h3>⚡ PERFORMANCE</h3>
+          <p>DOM size, page weight, load time, render-blocking scripts, layout shift risks.</p>
+        </article>
+        <article class="question-block">
+          <div class="block-top">?</div>
+          <h3>♿ ACCESSIBILITY</h3>
+          <p>axe-core WCAG checks plus alt text, contrast, labels, and heading structure.</p>
+        </article>
+        <article class="question-block">
+          <div class="block-top">?</div>
+          <h3>🔍 SEO</h3>
+          <p>Title, meta description, H1, canonical, Open Graph, structured data.</p>
+        </article>
+        <article class="question-block">
+          <div class="block-top">?</div>
+          <h3>✨ UX</h3>
+          <p>Tap targets, font sizes, mobile viewport, forms, horizontal scroll.</p>
+        </article>
+        <article class="question-block special">
+          <div class="block-top">!</div>
+          <h3>🎯 CLICK TO LOCATE</h3>
+          <p>Click any issue to highlight the exact element on the page. Game over for bugs.</p>
+        </article>
+        <article class="question-block special">
+          <div class="block-top">!</div>
+          <h3>🔒 100% LOCAL</h3>
+          <p>Nothing leaves your browser. No accounts. No tracking. Pure arcade privacy.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- How to Play -->
+    <section class="level pipe-level" id="howto">
+      <div class="pipe pipe-left" aria-hidden="true"></div>
+      <div class="pipe pipe-right" aria-hidden="true"></div>
+
+      <div class="level-header">
+        <h2>HOW TO PLAY</h2>
+      </div>
+
+      <ol class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <div>
+            <strong>Install Extension</strong>
+            <p>Get it from the Chrome Web Store or load unpacked from GitHub.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <div>
+            <strong>Visit Any Website</strong>
+            <p>Navigate to the page you want to audit — any public URL works.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <div>
+            <strong>Press 🧨 Test This Page</strong>
+            <p>Click the extension icon and hit the big red button. Scores appear instantly.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">4</span>
+          <div>
+            <strong>Fix &amp; Re-run</strong>
+            <p>Click issues to locate them. Fix bugs. Beat your high score.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Issue Examples -->
+    <section class="level" id="issues-demo">
+      <div class="level-header">
+        <h2>BOSS WARNINGS</h2>
+      </div>
+      <div class="warning-board">
+        <div class="warning-line"><span class="warn-icon">⚠</span> 12 images lack alt text</div>
+        <div class="warning-line"><span class="warn-icon">⚠</span> 3 buttons have poor contrast</div>
+        <div class="warning-line"><span class="warn-icon">⚠</span> Main content shifts during loading</div>
+        <div class="warning-line"><span class="warn-icon">⚠</span> 2 forms have missing labels</div>
+        <div class="warning-line"><span class="warn-icon">⚠</span> Page has excessive DOM nodes</div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="level castle" id="download">
+      <div class="castle-top" aria-hidden="true"></div>
+      <h2>READY PLAYER ONE?</h2>
+      <p class="castle-text">Join developers who audit pages like a retro arcade champion.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-primary btn-large" id="store-btn-2">
+          <span class="btn-shine"></span>
+          🧨 ADD TO CHROME — FREE
+        </a>
+      </div>
+      <p class="store-note" id="store-note">
+        Chrome Web Store link activates after publishing. 
+        <a href="https://github.com/shubhransh-gupta/page-audit#quick-start">Load unpacked</a> works today.
+      </p>
+    </section>
+  </main>
+
+  <footer class="arcade-footer">
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://github.com/shubhransh-gupta/page-audit" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/shubhransh-gupta/page-audit/issues" target="_blank" rel="noopener">Report Bug</a>
+    </nav>
+    <p>Made with 🕹️ by developers, for developers · MIT License</p>
+    <p class="footer-insert">INSERT COIN TO CONTINUE</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
