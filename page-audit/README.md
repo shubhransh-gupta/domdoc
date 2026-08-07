@@ -24,6 +24,12 @@ No npm install required.
 
 ### Load unpacked (Chrome / Edge / Brave)
 
+1. Open `chrome://extensions` (or `edge://extensions` for Edge)
+2. Enable **Developer mode**
+3. Click **Load unpacked**
+4. Select this `page-audit` folder (must contain `manifest.json`)
+5. Visit any website → click the extension → **Test This Page**
+
 ## Chrome Web Store
 
 Publishing guide: [store/PUBLISHING.md](../store/PUBLISHING.md)  
