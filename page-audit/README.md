@@ -2,17 +2,27 @@
 
 A Chrome extension that instantly audits any webpage for **Performance**, **Accessibility**, **SEO**, and **UX** issues.
 
-🕹️ **Marketing site:** https://shubhransh-gupta.github.io/page-audit/
+🌐 **Website:** https://shubhransh-gupta.github.io/page-audit/
 
-No npm install required. Load the folder directly in Chrome via **Load unpacked**.
+No npm install required.
 
-## Quick start
+## Install options
 
-1. Open `chrome://extensions`
-2. Enable **Developer mode**
-3. Click **Load unpacked**
-4. Select this `page-audit` folder
-5. Visit any website and click the extension icon → **Test This Page**
+| Method | Best for |
+|---|---|
+| [Download ZIP](https://github.com/shubhransh-gupta/page-audit/archive/refs/heads/main.zip) | Quickest — no git needed |
+| Load unpacked | After extracting ZIP or cloning repo |
+| Chrome Web Store | Coming soon — one-click install |
+| Microsoft Edge | Same folder via `edge://extensions` |
+
+### Download ZIP (easiest)
+
+1. [Download ZIP](https://github.com/shubhransh-gupta/page-audit/archive/refs/heads/main.zip)
+2. Unzip → open the inner `page-audit` folder
+3. Open `chrome://extensions` → enable **Developer mode** → **Load unpacked**
+4. Select that `page-audit` folder
+
+### Load unpacked (Chrome / Edge / Brave)
 
 ## Chrome Web Store
 
