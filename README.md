@@ -56,4 +56,4 @@ scripts/         ← Build scripts
 
 ## License
 
-MIT
+[MIT](./LICENSE) © 2026 Shubhransh Gupta

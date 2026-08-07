@@ -71,4 +71,4 @@ domdoc/
 
 ## License
 
-MIT
+[MIT](../LICENSE) © 2026 Shubhransh Gupta
