@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Audit</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header-top">
+        <span class="logo">🧨</span>
+        <div class="header-text">
+          <h1>Page Audit</h1>
+          <p class="subtitle">One-click Lighthouse for developers</p>
+        </div>
+      </div>
+      <p class="page-url" id="page-url" title="">—</p>
+    </header>
+
+    <main>
+      <div id="state-idle" class="state">
+        <button id="btn-audit" class="btn-primary">
+          <span class="btn-icon">🧨</span>
+          Test This Page
+        </button>
+        <p class="hint">Runs instant checks on the current tab</p>
+      </div>
+
+      <div id="state-loading" class="state hidden">
+        <div class="spinner"></div>
+        <p class="loading-text">Auditing page…</p>
+        <p class="loading-sub">Running heuristics + axe-core accessibility checks</p>
+      </div>
+
+      <div id="state-error" class="state hidden">
+        <div class="error-box">
+          <span>⚠</span>
+          <p id="error-message">Could not audit this page.</p>
+        </div>
+        <button id="btn-retry" class="btn-secondary">Try Again</button>
+      </div>
+
+      <div id="state-results" class="state hidden">
+        <div class="overall-score" id="overall-score">
+          <div class="overall-ring">
+            <span class="overall-number" id="overall-number">—</span>
+          </div>
+          <div class="overall-label">
+            <span>Overall Score</span>
+            <span class="overall-grade" id="overall-grade">—</span>
+          </div>
+        </div>
+
+        <section class="scores" id="scores"></section>
+
+        <section class="issues-section">
+          <div class="issues-header">
+            <h2>Issues Found</h2>
+            <span class="issue-count" id="issue-count">0</span>
+          </div>
+          <p class="issues-hint" id="issues-hint">Click an issue to highlight it on the page</p>
+          <ul class="issues-list" id="issues-list"></ul>
+        </section>
+
+        <div class="actions">
+          <button id="btn-rerun" class="btn-secondary">Re-run Audit</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>Performance · Accessibility · SEO · UX</span>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
