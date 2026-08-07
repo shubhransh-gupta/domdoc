@@ -1,65 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — Page Audit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#0d0d10">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="bg-gradient" aria-hidden="true"></div>
-  <div class="bg-orbs" aria-hidden="true">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-  </div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="header">
-    <div class="wrap header-inner">
-      <a href="index.html" class="brand">
-        <span class="brand-mark">🧨</span>
-        <span>Page Audit</span>
-      </a>
-    </div>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="nav__logo">PAGE AUDIT</a>
+      <div class="nav__links">
+        <a href="index.html#install" class="nav__link nav__link--accent">Install</a>
+        <a href="https://github.com/shubhransh-gupta/page-audit" class="nav__link" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </nav>
   </header>
 
-  <main class="page">
-    <div class="wrap">
-      <article class="glass-card page-card">
-        <a href="index.html" class="back">← Back to home</a>
-        <h1>Privacy Policy</h1>
-        <p class="page-meta">Last updated: August 8, 2026</p>
+  <main id="main" class="privacy-page">
+    <a href="index.html" class="back-link">← Back to home</a>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: August 8, 2026</p>
 
-        <p>Page Audit is a browser extension that helps you audit web pages for performance, accessibility, SEO, and UX issues.</p>
+    <p>Page Audit is a browser extension that audits web pages for performance, accessibility, SEO, and UX issues.</p>
 
-        <h2>Data collection</h2>
-        <p>We do not collect, store, or transmit any personal data. All analysis happens locally in your browser.</p>
+    <h2>Data collection</h2>
+    <p>We do not collect, store, or transmit any personal data. All analysis happens locally in your browser.</p>
 
-        <h2>What the extension does</h2>
-        <ul>
-          <li>Reads the current page when you click "Test This Page"</li>
-          <li>Runs checks using built-in scripts and axe-core</li>
-          <li>Shows results in the extension popup</li>
-          <li>Highlights elements on the page when you click an issue</li>
-        </ul>
+    <h2>What the extension does</h2>
+    <ul>
+      <li>Reads the current page when you click "Test This Page"</li>
+      <li>Runs checks using built-in scripts and axe-core</li>
+      <li>Shows results in the extension popup</li>
+      <li>Highlights elements on the page when you click an issue</li>
+    </ul>
 
-        <h2>Permissions</h2>
-        <ul>
-          <li><strong>activeTab</strong> — used only when you open the extension on the current tab</li>
-          <li><strong>scripting</strong> — used to run the audit when you request it</li>
-        </ul>
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>activeTab</strong> — used only when you open the extension on the current tab</li>
+      <li><strong>scripting</strong> — used to run the audit when you request it</li>
+    </ul>
 
-        <h2>Contact</h2>
-        <p>If you have questions, please <a href="https://github.com/shubhransh-gupta/page-audit/issues">open an issue on GitHub</a>.</p>
-      </article>
-    </div>
+    <h2>Contact</h2>
+    <p>If you have questions, please <a href="https://github.com/shubhransh-gupta/page-audit/issues">open an issue on GitHub</a>.</p>
   </main>
 
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <p>Page Audit · MIT License</p>
-    </div>
+  <footer class="site-footer">
+    <p class="site-footer__copy">Page Audit · MIT License</p>
   </footer>
 </body>
 </html>

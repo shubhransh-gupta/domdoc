@@ -1,232 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Audit — One-Click Lighthouse for Developers</title>
-  <meta name="description" content="Audit any webpage for Performance, Accessibility, SEO, and UX in one click. Free Chrome extension." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧨</text></svg>" />
+  <meta name="description" content="Page Audit is a free Chrome extension. Test any webpage for Performance, Accessibility, SEO, and UX in one click.">
+  <meta name="theme-color" content="#0d0d10">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧨</text></svg>">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="bg-gradient" aria-hidden="true"></div>
-  <div class="bg-orbs" aria-hidden="true">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-  </div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="header">
-    <div class="wrap header-inner">
-      <a href="index.html" class="brand">
-        <span class="brand-mark">🧨</span>
-        <span>Page Audit</span>
-      </a>
-      <nav class="nav">
-        <a href="#features">Features</a>
-        <a href="#install">Install</a>
-        <a href="https://github.com/shubhransh-gupta/page-audit" target="_blank" rel="noopener">GitHub</a>
-      </nav>
-      <a href="#install" class="button button-primary">Install Free</a>
-    </div>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a href="#" class="nav__logo">PAGE AUDIT</a>
+      <div class="nav__links">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#features" class="nav__link">Features</a>
+        <a href="#install" class="nav__link nav__link--accent">Install</a>
+        <a href="#privacy" class="nav__link">Privacy</a>
+        <a href="https://github.com/shubhransh-gupta/page-audit" class="nav__link" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </nav>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero">
-      <div class="wrap hero-layout">
-        <div class="hero-copy">
-          <p class="label">Free Chrome Extension</p>
-          <h1>Test any webpage in one click</h1>
-          <p class="hero-description">
-            Page Audit gives you instant scores for Performance, Accessibility, SEO, and UX —
-            plus a clear list of issues you can click to find on the page.
-          </p>
-          <div class="hero-buttons">
-            <a href="#install" class="button button-primary button-large">Install Extension</a>
-            <a href="https://github.com/shubhransh-gupta/page-audit" class="button button-glass button-large" target="_blank" rel="noopener">View on GitHub</a>
-          </div>
-          <div class="hero-tags">
-            <span>No npm required</span>
-            <span>Runs locally</span>
-            <span>Chrome & Edge</span>
-          </div>
-        </div>
+      <div class="hero__badge">Free · Open source · Local-first</div>
+      <h1>Page Audit</h1>
+      <p class="hero__tagline">One-click Lighthouse for developers.</p>
+      <p class="hero__desc">A browser extension that audits any webpage for Performance, Accessibility, SEO, and UX. Click the icon, hit Test This Page, and get instant scores plus a list of issues you can click to locate on the page.</p>
+      <blockquote class="hero__quote">Stop opening DevTools just to answer “what’s wrong with this page?”</blockquote>
+      <div class="hero__cta">
+        <a href="https://github.com/shubhransh-gupta/page-audit/archive/refs/heads/main.zip" class="btn btn--primary">Download extension</a>
+        <a href="#install" class="btn btn--secondary">Installation guide</a>
+      </div>
+      <p class="hero__note">Works in Chrome, Brave, Edge · No account · No npm required</p>
+    </section>
 
-        <div class="glass-card preview">
-          <div class="preview-top">
-            <strong>Page Audit</strong>
-            <span>example.com</span>
+    <section id="about" class="section about">
+      <div class="section__inner">
+        <div class="about__grid">
+          <div>
+            <h2 class="section__title">What is Page Audit?</h2>
+            <p class="section__lead">This website tells you about the product. The <strong>extension</strong> is what you install in your browser to use it.</p>
+            <ul class="about__list">
+              <li><strong>Website</strong> — you're here. Learn what it does and how to install.</li>
+              <li><strong>Extension</strong> — a small add-on in Chrome/Brave/Edge that audits the current tab when you click Test This Page.</li>
+            </ul>
+            <p class="about__note">Page Audit is not a full CI Lighthouse replacement. It's fast, local feedback for everyday development — scores, issue lists, and click-to-highlight on the page. Powered by built-in heuristics and axe-core for accessibility.</p>
           </div>
-          <div class="preview-overall">
-            <span class="preview-score">78</span>
-            <span class="preview-label">Overall Score</span>
-          </div>
-          <div class="preview-metrics">
-            <div class="metric">
-              <div class="metric-head"><span>Performance</span><strong>82</strong></div>
-              <div class="metric-bar"><span style="width: 82%"></span></div>
+          <div class="about__card">
+            <div class="about__card-label">Sample results</div>
+            <ul class="score-list">
+              <li><span>Performance</span><strong>82</strong></li>
+              <li><span>Accessibility</span><strong>61</strong></li>
+              <li><span>SEO</span><strong>91</strong></li>
+              <li><span>UX</span><strong>73</strong></li>
+            </ul>
+            <div class="about__issues">
+              <p>⚠ 12 images lack alt text</p>
+              <p>⚠ 3 buttons have poor contrast</p>
+              <p>⚠ Main content shifts during loading</p>
             </div>
-            <div class="metric">
-              <div class="metric-head"><span>Accessibility</span><strong>61</strong></div>
-              <div class="metric-bar"><span style="width: 61%"></span></div>
-            </div>
-            <div class="metric">
-              <div class="metric-head"><span>SEO</span><strong>91</strong></div>
-              <div class="metric-bar"><span style="width: 91%"></span></div>
-            </div>
-            <div class="metric">
-              <div class="metric-head"><span>UX</span><strong>73</strong></div>
-              <div class="metric-bar"><span style="width: 73%"></span></div>
-            </div>
-          </div>
-          <div class="preview-issues">
-            <p>12 images lack alt text</p>
-            <p>3 buttons have poor contrast</p>
-            <p>Main content shifts during loading</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="features">
-      <div class="wrap">
-        <div class="section-title">
-          <h2>Everything you need to audit a page</h2>
-          <p>Quick feedback while you build. Open the extension, run an audit, fix issues, and move on.</p>
-        </div>
-        <div class="grid-3">
-          <article class="glass-card feature">
-            <div class="feature-icon">⚡</div>
-            <h3>Performance</h3>
-            <p>Check page weight, load time, DOM size, render-blocking scripts, and layout shift risks.</p>
-          </article>
-          <article class="glass-card feature">
-            <div class="feature-icon">♿</div>
-            <h3>Accessibility</h3>
-            <p>Powered by axe-core for WCAG checks, plus alt text, contrast, labels, and headings.</p>
-          </article>
-          <article class="glass-card feature">
-            <div class="feature-icon">🔍</div>
-            <h3>SEO</h3>
-            <p>Review title tags, meta descriptions, H1, canonical URLs, and Open Graph tags.</p>
-          </article>
-          <article class="glass-card feature">
-            <div class="feature-icon">✨</div>
-            <h3>UX</h3>
-            <p>Find small tap targets, missing viewport tags, bad font sizes, and form problems.</p>
-          </article>
-          <article class="glass-card feature">
-            <div class="feature-icon">🎯</div>
-            <h3>Click to locate</h3>
-            <p>Click any issue in the popup and the extension highlights that element on the page.</p>
-          </article>
-          <article class="glass-card feature">
-            <div class="feature-icon">🔒</div>
-            <h3>Private by default</h3>
-            <p>All checks run in your browser. Nothing is uploaded. Nothing is tracked.</p>
-          </article>
+    <section id="features" class="section features">
+      <div class="section__inner">
+        <h2 class="section__title section__title--center">Everything you need to audit a page</h2>
+        <p class="section__subtitle">Four categories. Actionable issues. No account.</p>
+        <div class="features__grid">
+          <article class="feature"><span class="feature__icon">⚡</span><h3>Performance</h3><p>DOM size, page weight, load time, render-blocking scripts, and layout shift risks.</p></article>
+          <article class="feature"><span class="feature__icon">♿</span><h3>Accessibility</h3><p>axe-core WCAG checks plus alt text, contrast, labels, and heading structure.</p></article>
+          <article class="feature"><span class="feature__icon">🔍</span><h3>SEO</h3><p>Title, meta description, H1, canonical URL, Open Graph, and structured data.</p></article>
+          <article class="feature"><span class="feature__icon">✨</span><h3>UX</h3><p>Tap targets, font sizes, mobile viewport, forms, and horizontal scroll.</p></article>
+          <article class="feature"><span class="feature__icon">🎯</span><h3>Click to locate</h3><p>Click any issue in the popup to scroll to and highlight that element on the page.</p></article>
+          <article class="feature"><span class="feature__icon">🔒</span><h3>100% local</h3><p>All checks run in your browser. Nothing is uploaded. Nothing is tracked.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="install">
-      <div class="wrap">
-        <div class="section-title">
-          <h2>How to install</h2>
-          <p>Choose the method that works best for you. No build step and no npm install.</p>
+    <section id="install" class="section install">
+      <div class="section__inner">
+        <h2 class="section__title section__title--center">Install the extension</h2>
+        <p class="section__subtitle">No Node.js. No npm. No terminal. Just download and load.</p>
+
+        <div class="install__highlight">
+          <strong>Load the inner <code>page-audit</code> folder</strong> — the one that contains <code>manifest.json</code>, not the repo root.
         </div>
 
-        <div class="install-layout">
-          <article class="glass-card install-main">
-            <span class="pill">Recommended</span>
-            <h3>Download and load in Chrome</h3>
-            <p>This is the fastest way to get started if you do not want to use the command line.</p>
-            <ol class="steps-list">
-              <li>Download the project as a ZIP file from GitHub.</li>
-              <li>Unzip it on your computer.</li>
-              <li>Open the folder named <code>page-audit</code> inside the unzipped folder.</li>
-              <li>In Chrome, go to <code>chrome://extensions</code>.</li>
-              <li>Turn on <strong>Developer mode</strong>.</li>
-              <li>Click <strong>Load unpacked</strong> and select that <code>page-audit</code> folder.</li>
-            </ol>
-            <a href="https://github.com/shubhransh-gupta/page-audit/archive/refs/heads/main.zip" class="button button-primary button-large button-full">Download ZIP</a>
-          </article>
+        <div class="install__steps">
+          <h3>Step-by-step (Chrome, Brave, or Edge)</h3>
+          <ol class="steps">
+            <li class="step">
+              <span class="step__num">1</span>
+              <div>
+                <strong>Download the extension</strong>
+                <p>Get the ZIP from GitHub and extract it on your computer.</p>
+                <a href="https://github.com/shubhransh-gupta/page-audit/archive/refs/heads/main.zip" class="btn btn--small btn--primary">Download ZIP</a>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__num">2</span>
+              <div>
+                <strong>Unzip the file</strong>
+                <p>Extract to a folder you'll keep — e.g. <code>page-audit-main/</code>. Don't delete it after installing; Chrome loads the extension from this folder.</p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__num">3</span>
+              <div>
+                <strong>Open extensions page</strong>
+                <ul class="browser-links">
+                  <li>Chrome → <code>chrome://extensions</code></li>
+                  <li>Brave → <code>brave://extensions</code></li>
+                  <li>Edge → <code>edge://extensions</code></li>
+                </ul>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__num">4</span>
+              <div>
+                <strong>Enable Developer mode</strong>
+                <p>Toggle <strong>Developer mode</strong> in the top-right corner of the extensions page.</p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__num">5</span>
+              <div>
+                <strong>Load unpacked</strong>
+                <p>Click <strong>Load unpacked</strong> and select <code>page-audit-main/page-audit</code> (the folder with <code>manifest.json</code>).</p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__num">6</span>
+              <div>
+                <strong>Start auditing pages</strong>
+                <p>Pin the extension icon, visit any website, and click <strong>Test This Page</strong>.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
 
-          <div class="install-side">
-            <article class="glass-card install-option">
-              <h3>Microsoft Edge</h3>
-              <p>Works the same way. Open <code>edge://extensions</code>, enable Developer mode, and load the same folder.</p>
-            </article>
-            <article class="glass-card install-option">
-              <h3>Clone with Git</h3>
-              <p>If you already use git, clone the repository and load the inner <code>page-audit</code> folder.</p>
-              <pre><code>git clone https://github.com/shubhransh-gupta/page-audit.git</code></pre>
-            </article>
-            <article class="glass-card install-option">
-              <h3>Chrome Web Store</h3>
-              <p>One-click install is coming soon. Until then, use the ZIP method above.</p>
-              <a href="#" class="button button-glass button-full disabled" id="store-btn">Chrome Web Store</a>
-            </article>
+        <div class="install__grid">
+          <div class="install__card install__card--ok">
+            <h4>✓ This works</h4>
+            <ul>
+              <li>Download ZIP from GitHub</li>
+              <li>Load <code>page-audit/page-audit</code> folder</li>
+              <li>Folder contains <code>manifest.json</code> + <code>popup/</code></li>
+            </ul>
+          </div>
+          <div class="install__card install__card--no">
+            <h4>✗ This does not work</h4>
+            <ul>
+              <li>Loading the repo root folder</li>
+              <li>Loading the <code>website/</code> folder</li>
+              <li>Auditing <code>chrome://</code> internal pages</li>
+            </ul>
           </div>
         </div>
+
+        <details class="faq">
+          <summary>I'm a developer — clone from GitHub</summary>
+          <div class="faq__body">
+            <pre><code>git clone https://github.com/shubhransh-gupta/page-audit.git
+cd page-audit/page-audit</code></pre>
+            <p>Then load that folder in <code>chrome://extensions</code> → Load unpacked. No build step needed.</p>
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>Why isn't it on the Chrome Web Store?</summary>
+          <div class="faq__body">
+            <p>Page Audit is distributed as open source for now. Install via the ZIP above — it's the same extension, just not listed in the store yet.</p>
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>Do I need npm or Node.js?</summary>
+          <div class="faq__body">
+            <p><strong>No.</strong> All dependencies (including axe-core) are bundled. Download, unzip, and load.</p>
+          </div>
+        </details>
       </div>
     </section>
 
-    <section class="section">
-      <div class="wrap">
-        <div class="section-title">
-          <h2>How to use it</h2>
+    <section id="privacy" class="section privacy">
+      <div class="section__inner privacy__inner">
+        <h2 class="section__title section__title--center">Your data stays yours</h2>
+        <p class="privacy__tagline">No account. No tracking. No upload required.</p>
+        <div class="privacy__grid">
+          <div class="privacy__item">All audits run locally</div>
+          <div class="privacy__item">No browsing history uploaded</div>
+          <div class="privacy__item">No analytics or telemetry</div>
+          <div class="privacy__item">Only runs when you click</div>
+          <div class="privacy__item">No account required</div>
+          <div class="privacy__item">axe-core bundled offline</div>
         </div>
-        <div class="grid-4">
-          <article class="glass-card step-card">
-            <span class="step-number">1</span>
-            <h3>Install the extension</h3>
-            <p>Add Page Audit to Chrome or Edge using one of the install methods above.</p>
-          </article>
-          <article class="glass-card step-card">
-            <span class="step-number">2</span>
-            <h3>Open any website</h3>
-            <p>Go to the page you want to check. Any normal public website works.</p>
-          </article>
-          <article class="glass-card step-card">
-            <span class="step-number">3</span>
-            <h3>Click Test This Page</h3>
-            <p>Open the extension popup and run the audit. Results appear in a few seconds.</p>
-          </article>
-          <article class="glass-card step-card">
-            <span class="step-number">4</span>
-            <h3>Fix issues and re-run</h3>
-            <p>Click an issue to find it on the page, fix it, and run the audit again.</p>
-          </article>
-        </div>
+        <p class="privacy__footer">Page Audit only accesses the current tab when you explicitly click Test This Page. <a href="privacy.html">Read the full privacy policy</a>.</p>
       </div>
     </section>
 
-    <section class="section">
-      <div class="wrap">
-        <div class="glass-card cta">
-          <h2>Start auditing pages in seconds</h2>
-          <p>Free, open source, and ready to use without any setup.</p>
-          <a href="#install" class="button button-primary button-large">Install Page Audit</a>
+    <section class="section cta">
+      <div class="section__inner cta__inner">
+        <h2>Ready to audit your next page?</h2>
+        <p>Download the extension and try it on any website.</p>
+        <div class="hero__cta">
+          <a href="https://github.com/shubhransh-gupta/page-audit/archive/refs/heads/main.zip" class="btn btn--primary">Download extension</a>
+          <a href="https://github.com/shubhransh-gupta/page-audit" class="btn btn--secondary" target="_blank" rel="noopener">View on GitHub</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <p>Page Audit · MIT License</p>
-      <nav>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="https://github.com/shubhransh-gupta/page-audit" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://github.com/shubhransh-gupta/page-audit/issues" target="_blank" rel="noopener">Report a bug</a>
-      </nav>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div>
+        <strong>PAGE AUDIT</strong>
+        <p>One-click webpage quality audits</p>
+      </div>
+      <div class="site-footer__links">
+        <a href="#install">Install</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://github.com/shubhransh-gupta/page-audit">GitHub</a>
+      </div>
     </div>
+    <p class="site-footer__copy">Works in Chrome, Brave, Edge, and other Chromium browsers.</p>
+    <p class="site-footer__badge">
+      Created with <span class="site-footer__heart" aria-hidden="true">❤️</span> by
+      <a href="https://shubhransh-gupta.github.io/cv/" target="_blank" rel="noopener">Shubhransh Gupta</a>
+    </p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
