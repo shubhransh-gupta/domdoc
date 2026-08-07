@@ -4,6 +4,8 @@
 
 🌐 **Website:** https://shubhransh-gupta.github.io/domdoc/
 
+![DOMDoc website](../docs/images/website-hero.png)
+
 No npm install required.
 
 ## Install options
