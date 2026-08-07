@@ -1,6 +1,6 @@
-# DomDoc: Page Audit
+# DOMDoc: Page Audit
 
-**DomDoc** is a browser extension that instantly audits any webpage for **Performance**, **Accessibility**, **SEO**, and **UX** issues — one-click Lighthouse for developers.
+**DOMDoc** is a browser extension that instantly audits any webpage for **Performance**, **Accessibility**, **SEO**, and **UX** issues — one-click Lighthouse for developers.
 
 🌐 **Website:** https://shubhransh-gupta.github.io/domdoc/
 

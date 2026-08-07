@@ -1,5 +1,5 @@
 /**
- * DomDoc: Page Audit — on-page issue highlighter.
+ * DOMDoc: Page Audit — on-page issue highlighter.
  * Exposes window.__domDocHighlight and window.__domDocClearHighlights.
  */
 (() => {

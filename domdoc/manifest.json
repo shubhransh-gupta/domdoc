@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "DomDoc: Page Audit",
+  "name": "DOMDoc: Page Audit",
   "version": "1.3.0",
   "description": "One-click webpage audit for Performance, Accessibility, SEO, and UX. Instant scores and issue highlighting.",
   "homepage_url": "https://shubhransh-gupta.github.io/domdoc/",
@@ -12,7 +12,7 @@
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
     },
-    "default_title": "DomDoc: Page Audit"
+    "default_title": "DOMDoc: Page Audit"
   },
   "icons": {
     "16": "icons/icon16.png",

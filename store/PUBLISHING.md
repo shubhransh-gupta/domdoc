@@ -1,6 +1,6 @@
 # Chrome Web Store Publishing Guide
 
-Follow these steps to publish **DomDoc: Page Audit** on the Chrome Web Store.
+Follow these steps to publish **DOMDoc: Page Audit** on the Chrome Web Store.
 
 ## Prerequisites
 

@@ -7,7 +7,7 @@ Copy-paste these into the Chrome Web Store Developer Dashboard.
 ## Extension Name
 
 ```
-DomDoc: Page Audit
+DOMDoc: Page Audit
 ```
 
 ## Summary (132 chars max)
@@ -21,7 +21,7 @@ One-click webpage audit for Performance, Accessibility, SEO & UX. Instant scores
 ```
 🩺 DOMDOC: PAGE AUDIT — One-Click Lighthouse for Developers
 
-Stop guessing what's wrong with your website. DomDoc gives you instant scores and actionable fixes — like Lighthouse, but one click away.
+Stop guessing what's wrong with your website. DOMDoc gives you instant scores and actionable fixes — like Lighthouse, but one click away.
 
 ⚡ PERFORMANCE
 • DOM size & page weight analysis
@@ -47,7 +47,7 @@ Stop guessing what's wrong with your website. DomDoc gives you instant scores an
 • Horizontal scroll detection
 
 🎯 HOW TO USE
-1. Click the DomDoc icon on any website
+1. Click the DOMDoc icon on any website
 2. Press "Test This Page"
 3. Review scores and issues
 4. Click issues to locate them on the page

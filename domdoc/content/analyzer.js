@@ -1,5 +1,5 @@
 /**
- * DomDoc: Page Audit — content-script audit engine.
+ * DOMDoc: Page Audit — content-script audit engine.
  * Async IIFE; call runAudit() to produce a full report.
  */
 (async () => {
