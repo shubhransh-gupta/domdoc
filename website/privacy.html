@@ -4,53 +4,61 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — Page Audit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">
-        <span class="logo-icon">🧨</span>
-        Page Audit
+  <div class="bg-gradient" aria-hidden="true"></div>
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <header class="header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">🧨</span>
+        <span>Page Audit</span>
       </a>
     </div>
   </header>
 
-  <main class="page-content">
-    <a href="index.html" class="back-link">← Back to home</a>
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: August 8, 2026</p>
+  <main class="page">
+    <div class="wrap">
+      <article class="glass-card page-card">
+        <a href="index.html" class="back">← Back to home</a>
+        <h1>Privacy Policy</h1>
+        <p class="page-meta">Last updated: August 8, 2026</p>
 
-    <p>Page Audit is a browser extension that audits web pages for performance, accessibility, SEO, and UX issues. Your privacy matters to us.</p>
+        <p>Page Audit is a browser extension that helps you audit web pages for performance, accessibility, SEO, and UX issues.</p>
 
-    <h2>Data collection</h2>
-    <p><strong>We do not collect, store, or transmit any personal data.</strong> The extension runs entirely in your browser on pages you choose to audit.</p>
+        <h2>Data collection</h2>
+        <p>We do not collect, store, or transmit any personal data. All analysis happens locally in your browser.</p>
 
-    <h2>What the extension does</h2>
-    <ul>
-      <li>Analyzes the current webpage's DOM, styles, and performance metrics locally</li>
-      <li>Runs accessibility checks using the bundled axe-core library</li>
-      <li>Displays results in the extension popup</li>
-      <li>Highlights elements on the page when you click an issue</li>
-    </ul>
+        <h2>What the extension does</h2>
+        <ul>
+          <li>Reads the current page when you click "Test This Page"</li>
+          <li>Runs checks using built-in scripts and axe-core</li>
+          <li>Shows results in the extension popup</li>
+          <li>Highlights elements on the page when you click an issue</li>
+        </ul>
 
-    <h2>Permissions</h2>
-    <ul>
-      <li><strong>activeTab</strong> — Accesses the page you're viewing only when you click the extension</li>
-      <li><strong>scripting</strong> — Injects the audit script only when you request an audit</li>
-    </ul>
+        <h2>Permissions</h2>
+        <ul>
+          <li><strong>activeTab</strong> — used only when you open the extension on the current tab</li>
+          <li><strong>scripting</strong> — used to run the audit when you request it</li>
+        </ul>
 
-    <h2>Third-party services</h2>
-    <p>The extension does not connect to external servers. All analysis happens locally.</p>
-
-    <h2>Contact</h2>
-    <p>Questions? <a href="https://github.com/shubhransh-gupta/page-audit/issues">Open an issue on GitHub</a>.</p>
+        <h2>Contact</h2>
+        <p>If you have questions, please <a href="https://github.com/shubhransh-gupta/page-audit/issues">open an issue on GitHub</a>.</p>
+      </article>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p class="footer-copy">MIT License · Page Audit</p>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>Page Audit · MIT License</p>
     </div>
   </footer>
 </body>
