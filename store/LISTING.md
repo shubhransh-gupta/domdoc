@@ -7,21 +7,21 @@ Copy-paste these into the Chrome Web Store Developer Dashboard.
 ## Extension Name
 
 ```
-Page Audit — One-Click Lighthouse
+DomDoc: Page Audit
 ```
 
 ## Summary (132 chars max)
 
 ```
-Instantly audit any webpage for Performance, Accessibility, SEO & UX. One click. Highlights issues on the page. No data collected.
+One-click webpage audit for Performance, Accessibility, SEO & UX. Instant scores, issue highlights. Local, free, no data collected.
 ```
 
 ## Description
 
 ```
-🧨 PAGE AUDIT — One-Click Lighthouse for Developers
+🩺 DOMDOC: PAGE AUDIT — One-Click Lighthouse for Developers
 
-Stop guessing what's wrong with your website. Page Audit gives you instant scores and actionable fixes — like Lighthouse, but one click away.
+Stop guessing what's wrong with your website. DomDoc gives you instant scores and actionable fixes — like Lighthouse, but one click away.
 
 ⚡ PERFORMANCE
 • DOM size & page weight analysis
@@ -47,7 +47,7 @@ Stop guessing what's wrong with your website. Page Audit gives you instant score
 • Horizontal scroll detection
 
 🎯 HOW TO USE
-1. Click the extension icon on any website
+1. Click the DomDoc icon on any website
 2. Press "Test This Page"
 3. Review scores and issues
 4. Click issues to locate them on the page
@@ -68,22 +68,16 @@ Free. No npm. No build step. Just install and audit.
 Developer Tools
 ```
 
-## Language
-
-```
-English
-```
-
 ## Privacy Policy URL
 
 ```
-https://shubhransh-gupta.github.io/page-audit/privacy.html
+https://shubhransh-gupta.github.io/domdoc/privacy.html
 ```
 
 ## Homepage URL
 
 ```
-https://shubhransh-gupta.github.io/page-audit/
+https://shubhransh-gupta.github.io/domdoc/
 ```
 
 ## Single Purpose Description
@@ -92,32 +86,8 @@ https://shubhransh-gupta.github.io/page-audit/
 This extension audits web pages for performance, accessibility, SEO, and UX issues when the user clicks "Test This Page".
 ```
 
-## Permission Justifications
-
-### activeTab
-```
-Needed to read and analyze the webpage the user is currently viewing when they explicitly click "Test This Page". The extension never accesses tabs in the background.
-```
-
-### scripting
-```
-Needed to inject the audit engine into the active tab to inspect DOM elements, performance metrics, and run accessibility checks. Injection only happens on user action.
-```
-
-## Privacy practices (Dashboard questionnaire)
-
-- **Does your extension collect user data?** → NO
-- **Does your extension handle personal or sensitive user data?** → NO
-- **Certify compliance with Developer Program Policies** → YES
-
-## Support URL (optional)
+## Support URL
 
 ```
-https://github.com/shubhransh-gupta/page-audit/issues
-```
-
-## Tags / Keywords (if available)
-
-```
-lighthouse, audit, accessibility, performance, seo, ux, axe, developer tools, web quality, page speed
+https://github.com/shubhransh-gupta/domdoc/issues
 ```

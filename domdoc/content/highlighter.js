@@ -1,14 +1,14 @@
 /**
- * Page Audit — on-page issue highlighter.
- * Exposes window.__pageAuditHighlight and window.__pageAuditClearHighlights.
+ * DomDoc: Page Audit — on-page issue highlighter.
+ * Exposes window.__domDocHighlight and window.__domDocClearHighlights.
  */
 (() => {
   'use strict';
 
-  const OVERLAY_CLASS = 'page-audit-highlight-overlay';
-  const BADGE_ID = 'page-audit-highlight-badge';
-  const STYLE_ID = 'page-audit-highlight-styles';
-  const AUDIT_ID_ATTR = 'data-page-audit-id';
+  const OVERLAY_CLASS = 'domdoc-highlight-overlay';
+  const BADGE_ID = 'domdoc-highlight-badge';
+  const STYLE_ID = 'domdoc-highlight-styles';
+  const AUDIT_ID_ATTR = 'data-domdoc-id';
 
   /** @type {HTMLElement[]} */
   let activeOverlays = [];
@@ -28,11 +28,11 @@
         border-radius: 4px;
         background: rgba(249, 115, 22, 0.12);
         box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.25), 0 4px 16px rgba(249, 115, 22, 0.2);
-        animation: page-audit-pulse 1.6s ease-in-out infinite;
+        animation: domdoc-pulse 1.6s ease-in-out infinite;
         transition: top 0.1s, left 0.1s, width 0.1s, height 0.1s;
       }
 
-      @keyframes page-audit-pulse {
+      @keyframes domdoc-pulse {
         0%, 100% {
           box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.35), 0 4px 16px rgba(249, 115, 22, 0.15);
           background: rgba(249, 115, 22, 0.10);
@@ -62,10 +62,10 @@
         border-radius: 10px;
         border: 1px solid #f97316;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(249, 115, 22, 0.3);
-        animation: page-audit-badge-in 0.25s ease-out;
+        animation: domdoc-badge-in 0.25s ease-out;
       }
 
-      @keyframes page-audit-badge-in {
+      @keyframes domdoc-badge-in {
         from {
           opacity: 0;
           transform: translateX(-50%) translateY(12px);
@@ -76,27 +76,27 @@
         }
       }
 
-      #${BADGE_ID} .page-audit-badge-icon {
+      #${BADGE_ID} .domdoc-badge-icon {
         flex-shrink: 0;
         width: 10px;
         height: 10px;
         border-radius: 50%;
         background: #f97316;
-        animation: page-audit-pulse-dot 1.6s ease-in-out infinite;
+        animation: domdoc-pulse-dot 1.6s ease-in-out infinite;
       }
 
-      @keyframes page-audit-pulse-dot {
+      @keyframes domdoc-pulse-dot {
         0%, 100% { opacity: 1; transform: scale(1); }
         50% { opacity: 0.6; transform: scale(1.3); }
       }
 
-      #${BADGE_ID} .page-audit-badge-message {
+      #${BADGE_ID} .domdoc-badge-message {
         flex: 1;
         min-width: 0;
         word-break: break-word;
       }
 
-      #${BADGE_ID} .page-audit-badge-dismiss {
+      #${BADGE_ID} .domdoc-badge-dismiss {
         flex-shrink: 0;
         appearance: none;
         border: none;
@@ -110,12 +110,12 @@
         transition: background 0.15s, color 0.15s;
       }
 
-      #${BADGE_ID} .page-audit-badge-dismiss:hover {
+      #${BADGE_ID} .domdoc-badge-dismiss:hover {
         background: #f97316;
         color: #1c1917;
       }
 
-      #${BADGE_ID} .page-audit-badge-dismiss:focus-visible {
+      #${BADGE_ID} .domdoc-badge-dismiss:focus-visible {
         outline: 2px solid #fdba74;
         outline-offset: 2px;
       }
@@ -169,20 +169,20 @@
     badge.setAttribute('aria-live', 'polite');
 
     const icon = document.createElement('span');
-    icon.className = 'page-audit-badge-icon';
+    icon.className = 'domdoc-badge-icon';
     icon.setAttribute('aria-hidden', 'true');
 
     const text = document.createElement('span');
-    text.className = 'page-audit-badge-message';
+    text.className = 'domdoc-badge-message';
     text.textContent = message || 'Highlighted audit issue on page';
 
     const dismiss = document.createElement('button');
     dismiss.type = 'button';
-    dismiss.className = 'page-audit-badge-dismiss';
+    dismiss.className = 'domdoc-badge-dismiss';
     dismiss.textContent = 'Dismiss';
     dismiss.setAttribute('aria-label', 'Dismiss audit highlight');
     dismiss.addEventListener('click', () => {
-      window.__pageAuditClearHighlights();
+      window.__domDocClearHighlights();
     });
 
     badge.appendChild(icon);
@@ -262,6 +262,6 @@
     removeBadge();
   }
 
-  window.__pageAuditHighlight = highlight;
-  window.__pageAuditClearHighlights = clearHighlights;
+  window.__domDocHighlight = highlight;
+  window.__domDocClearHighlights = clearHighlights;
 })();

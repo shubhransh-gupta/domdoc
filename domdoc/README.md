@@ -1,8 +1,8 @@
-# Page Audit — One-Click Lighthouse
+# DomDoc: Page Audit
 
-A Chrome extension that instantly audits any webpage for **Performance**, **Accessibility**, **SEO**, and **UX** issues.
+**DomDoc** is a browser extension that instantly audits any webpage for **Performance**, **Accessibility**, **SEO**, and **UX** issues — one-click Lighthouse for developers.
 
-🌐 **Website:** https://shubhransh-gupta.github.io/page-audit/
+🌐 **Website:** https://shubhransh-gupta.github.io/domdoc/
 
 No npm install required.
 
@@ -10,24 +10,24 @@ No npm install required.
 
 | Method | Best for |
 |---|---|
-| [Download ZIP](https://github.com/shubhransh-gupta/page-audit/archive/refs/heads/main.zip) | Quickest — no git needed |
+| [Download ZIP](https://github.com/shubhransh-gupta/domdoc/archive/refs/heads/main.zip) | Quickest — no git needed |
 | Load unpacked | After extracting ZIP or cloning repo |
 | Chrome Web Store | Coming soon — one-click install |
 | Microsoft Edge | Same folder via `edge://extensions` |
 
 ### Download ZIP (easiest)
 
-1. [Download ZIP](https://github.com/shubhransh-gupta/page-audit/archive/refs/heads/main.zip)
-2. Unzip → open the inner `page-audit` folder
+1. [Download ZIP](https://github.com/shubhransh-gupta/domdoc/archive/refs/heads/main.zip)
+2. Unzip → open the inner `domdoc` folder
 3. Open `chrome://extensions` → enable **Developer mode** → **Load unpacked**
-4. Select that `page-audit` folder
+4. Select that `domdoc` folder
 
 ### Load unpacked (Chrome / Edge / Brave)
 
 1. Open `chrome://extensions` (or `edge://extensions` for Edge)
 2. Enable **Developer mode**
 3. Click **Load unpacked**
-4. Select this `page-audit` folder (must contain `manifest.json`)
+4. Select this `domdoc` folder (must contain `manifest.json`)
 5. Visit any website → click the extension → **Test This Page**
 
 ## Chrome Web Store
@@ -53,10 +53,10 @@ All dependencies (`axe-core`) are pre-bundled in `lib/axe.min.js`.
 ## Project structure
 
 ```
-page-audit/
+domdoc/
 ├── manifest.json
 ├── background.js
-├── lib/axe.min.js          # pre-bundled, no npm needed
+├── lib/axe.min.js
 ├── content/
 │   ├── analyzer.js
 │   └── highlighter.js

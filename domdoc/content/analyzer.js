@@ -1,11 +1,11 @@
 /**
- * Page Audit — content-script audit engine.
+ * DomDoc: Page Audit — content-script audit engine.
  * Async IIFE; call runAudit() to produce a full report.
  */
 (async () => {
   'use strict';
 
-  const AUDIT_ID_ATTR = 'data-page-audit-id';
+  const AUDIT_ID_ATTR = 'data-domdoc-id';
   let nextElementId = 1;
   const idToElement = new Map();
 
@@ -712,6 +712,6 @@
     };
   }
 
-  window.__pageAuditRun = runAudit;
+  window.__domDocRun = runAudit;
   return runAudit();
 })();

@@ -175,8 +175,8 @@ async function highlightIssue(item) {
     await chrome.scripting.executeScript({
       target: { tabId: currentTabId },
       func: (ids, msg) => {
-        if (typeof window.__pageAuditHighlight === "function") {
-          return window.__pageAuditHighlight(ids, msg);
+        if (typeof window.__domDocHighlight === "function") {
+          return window.__domDocHighlight(ids, msg);
         }
       },
       args: [targets, message],
